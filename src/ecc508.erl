@@ -120,7 +120,7 @@ slot_config_address(Slot) when Slot >= 0, Slot =< 15 ->
                           true ->
                               {0, (20 + Slot * 2) bsr 2};
                           false ->
-                              {1, ((Slot - 5) * 2) bsr 2}
+                              {1, ((Slot - 6) * 2) bsr 2}
                       end,
     {config, Block, Offset}.
 
